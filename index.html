@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Reloj Digital</title>
+	  <link rel="stylesheet" href="css/main.css">
+	  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	</head>
+	<body>
+		<header>
+			<h1 class="text-center">What's <strong>time</strong> is it?</h1>
+		</header>
+		<section>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="hora-cont">
+						<h1 id="hora" class="hora"></h1>
+						<span class="hora">:</span>
+						<h1 id="minuto" class="hora"></h1>
+						<span class="hora">:</span>
+						<h1 id="segundo" class="hora"></h1>
+						</div>
+						
+						<div class="fecha-cont">
+							<h4 id="dia" class="fecha"></h4>
+						<h4 id="mes" class="fecha"></h4>
+						<h4 id="anio" class="fecha"></h4>
+						</div>
+						
+					</div>
+				</div>
+				<div class="row">
+					<div id="place"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<button type="button" data-toggle="modal" data-target="#myModal"><i class="fa fa-star" aria-hidden="true" class="btn-plus"></i></button>
+					</div>
+					
+				</div>
+				<!-- Modal-->
+            <div id="myModal" role="dialog" class="modal fade ">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content modal-look">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" class="close">×</button>
+                    <h4 class="modal-title">Check a city!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="checkbox">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="0" class="pais">Chicago
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="1" class="pais">Sau Paulo
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="3" class="pais">Mexico D.F.
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="4" class="pais">Caracas
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="5" class="pais">Brasilia
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="6" class="pais">Quito
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="7" class="pais">Guayaquil
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="8" class="pais">Santa Mata
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="9" class="pais">Bogota
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+			</div>
+		</section>
+			
+		
+
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+	</body>
+</html>
